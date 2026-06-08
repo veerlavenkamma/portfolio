@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Veerlavenkamma Malladi | AI Specialist</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:linear-gradient(135deg,#0f172a,#1e293b,#0f172a);
+    color:white;
+    overflow-x:hidden;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+/* Background */
+.bg{
+    position:fixed;
+    width:100%;
+    height:100%;
+    z-index:-1;
+}
+
+.circle{
+    position:absolute;
+    border-radius:50%;
+    filter:blur(90px);
+    animation:float 8s infinite alternate;
+}
+
+.circle:nth-child(1){
+    width:300px;
+    height:300px;
+    background:#00ffff55;
+    top:10%;
+    left:5%;
+}
+
+.circle:nth-child(2){
+    width:350px;
+    height:350px;
+    background:#7c3aed55;
+    bottom:5%;
+    right:5%;
+}
+
+@keyframes float{
+    from{transform:translateY(0px);}
+    to{transform:translateY(50px);}
+}
+
+/* Navbar */
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 10%;
+    position:sticky;
+    top:0;
+    backdrop-filter:blur(15px);
+    background:rgba(255,255,255,0.05);
+    z-index:100;
+}
+
+.logo{
+    font-size:1.5rem;
+    font-weight:700;
+    color:#00ffff;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+    gap:25px;
+}
+
+nav a{
+    text-decoration:none;
+    color:white;
+    transition:.3s;
+}
+
+nav a:hover{
+    color:#00ffff;
+}
+
+/* Hero */
+.hero{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:20px;
+}
+
+.glass{
+    background:rgba(255,255,255,0.08);
+    border:1px solid rgba(255,255,255,0.15);
+    backdrop-filter:blur(15px);
+    border-radius:25px;
+    padding:40px;
+    max-width:900px;
+    animation:fadeUp 1s ease;
+}
+
+.hero h1{
+    font-size:3rem;
+}
+
+.hero span{
+    color:#00ffff;
+}
+
+.hero p{
+    margin-top:15px;
+    line-height:1.8;
+    color:#ddd;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:25px;
+    padding:12px 30px;
+    border-radius:30px;
+    text-decoration:none;
+    color:#fff;
+    background:linear-gradient(45deg,#00ffff,#7c3aed);
+    transition:.3s;
+}
+
+.btn:hover{
+    transform:translateY(-4px);
+}
+
+section{
+    padding:80px 10%;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:40px;
+    font-size:2rem;
+    color:#00ffff;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:rgba(255,255,255,0.08);
+    border:1px solid rgba(255,255,255,0.15);
+    backdrop-filter:blur(15px);
+    padding:25px;
+    border-radius:20px;
+    transition:.4s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.skills{
+    display:flex;
+    flex-wrap:wrap;
+    gap:15px;
+    justify-content:center;
+}
+
+.skill{
+    background:rgba(255,255,255,0.08);
+    border:1px solid rgba(255,255,255,0.15);
+    padding:12px 20px;
+    border-radius:30px;
+    transition:.3s;
+}
+
+.skill:hover{
+    background:#00ffff22;
+    transform:scale(1.05);
+}
+
+.project{
+    text-align:center;
+}
+
+.project h3{
+    color:#00ffff;
+}
+
+footer{
+    text-align:center;
+    padding:30px;
+    color:#bbb;
+}
+
+.socials a{
+    color:white;
+    text-decoration:none;
+    margin:0 10px;
+}
+
+.socials a:hover{
+    color:#00ffff;
+}
+
+@keyframes fadeUp{
+    from{
+        opacity:0;
+        transform:translateY(50px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+@media(max-width:768px){
+    .hero h1{
+        font-size:2.2rem;
+    }
+
+    nav{
+        flex-direction:column;
+        gap:15px;
+    }
+
+    nav ul{
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+}
+</style>
+</head>
+<body>
+
+<div class="bg">
+    <div class="circle"></div>
+    <div class="circle"></div>
+</div>
+
+<nav>
+    <div class="logo">VM</div>
+    <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#certifications">Certificates</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+<section class="hero">
+    <div class="glass">
+        <h1>Hi, I'm <span>Veerlavenkamma Malladi</span></h1>
+        <h2>AI Specialist | Generative AI Developer | Web Developer</h2>
+        <p>
+            Passionate AI enthusiast and B.Sc student specializing in
+            Generative AI, Prompt Engineering, AI Automation, MLOps,
+            RAG Systems, LLM Applications, and Full Stack Web Development.
+            I love building innovative AI-powered solutions that solve
+            real-world problems.
+        </p>
+
+        <a href="#contact" class="btn">Contact Me</a>
+    </div>
+</section>
+
+<section id="about">
+    <h2 class="section-title">About Me</h2>
+    <div class="glass">
+        <p>
+I am Veerlavenkamma Malladi, an AI Specialist, Generative AI Developer, and Web Developer pursuing a B.Sc degree. I am passionate about Generative AI, LLMs, RAG, AI Agents, MLOps, Prompt Engineering, and modern web technologies. Skilled in Python, Java, JavaScript, SQL, HTML, CSS, and DBMS, I enjoy building intelligent applications, automation solutions, and user-focused digital experiences while continuously learning and exploring emerging technologies.</p>
+    </div>
+</section>
+
+<section id="skills">
+    <h2 class="section-title">Skills</h2>
+
+    <div class="skills">
+        <div class="skill">Python</div>
+        <div class="skill">Java</div>
+        <div class="skill">JavaScript</div>
+        <div class="skill">HTML</div>
+        <div class="skill">CSS</div>
+        <div class="skill">SQL</div>
+        <div class="skill">DBMS</div>
+        <div class="skill">DSA</div>
+        <div class="skill">R Language</div>
+        <div class="skill">Generative AI</div>
+        <div class="skill">Prompt Engineering</div>
+        <div class="skill">AI Agents</div>
+        <div class="skill">MLOps</div>
+        <div class="skill">LLMs</div>
+        <div class="skill">RAG</div>
+        <div class="skill">AI Automation</div>
+        <div class="skill">Web Development</div>
+        <div class="skill">Linux</div>
+        <div class="skill">Cloud Tools</div>
+    </div>
+</section>
+
+<section id="projects">
+    <h2 class="section-title">Projects</h2>
+
+    <div class="cards">
+        <div class="card project">
+            <h3>Digital NGO Service Mobile Application</h3>
+            <p>
+                Developed a mobile application connecting donors,
+                volunteers, and people in need through modules like
+                Food, Shelter, Clothes, Education, Medical Support,
+                and Environmental Services.
+            </p>
+        </div>
+
+        <div class="card project">
+            <h3>AI Solutions & Automation</h3>
+            <p>
+                Built AI-powered workflows, prompt engineering systems,
+                automation tools, and intelligent assistants using
+                modern Generative AI technologies.
+            </p>
+        </div>
+    </div>
+</section>
+
+<section id="certifications">
+    <h2 class="section-title">Certifications</h2>
+
+    <div class="cards">
+
+        <div class="card">
+            Introduction to Claude Cowork – Anthropic
+        </div>
+
+        <div class="card">
+            Prompt Engineering Best Practices for Amazon Bedrock Models – AWS
+        </div>
+
+        <div class="card">
+            Introduction to Android Mobile Application Development – Meta
+        </div>
+
+        <div class="card">
+            Machine Learning Operations (MLOps) for Generative AI – Google
+        </div>
+
+    </div>
+</section>
+
+<section id="education">
+    <h2 class="section-title">Education</h2>
+
+    <div class="cards">
+        <div class="card">
+            <h3>B.Sc</h3>
+            <p>Sri Aditya Degree College</p>
+            <p>2024 – 2027 (Pursuing)</p>
+        </div>
+
+        <div class="card">
+            <h3>Intermediate MPC</h3>
+            <p>Divya Junior College</p>
+            <p>2022 – 2024</p>
+        </div>
+
+        <div class="card">
+            <h3>SSC</h3>
+            <p>Z.P.H.S Government School</p>
+            <p>2022</p>
+        </div>
+    </div>
+</section>
+
+<section id="contact">
+    <h2 class="section-title">Contact</h2>
+
+    <div class="glass" style="text-align:center;">
+        <h3>Let's Connect</h3>
+        <br>
+
+        <p>📧 veerlavenkammamalladi@gmail.com</p>
+        <p>📍 Bhimavaram, Andhra Pradesh</p>
+
+        <br>
+
+        <div class="socials">
+            <a href="https://github.com/veerlavenkamma" target="_blank">GitHub</a>
+            |
+            <a href="https://www.linkedin.com/in/veerlavenkamma-malladi-86113a38a/" target="_blank">LinkedIn</a>
+        </div>
+    </div>
+</section>
+
+<footer>
+    © 2026 Veerlavenkamma Malladi | AI Specialist & Web Developer
+</footer>
+
+</body>
+</html>
